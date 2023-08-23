@@ -140,3 +140,127 @@ header {
     border-radius: 2rem;
     border: 1px solid blue;
 }
+
+.status-area {
+    margin: 10px;
+    padding: 10px;
+}
+
+.status-options {
+    display: flex;
+    gap: 5px;
+}
+
+.status-option {
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #5a5d60;
+}
+
+.post-button {
+    margin-left: 20px;
+    border: none;
+    background-color: #5a5d60;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.feed {
+    max-width: 500px;
+    margin-left: -10px;
+    padding: 10px;
+    
+}
+
+.post {
+    background-color: #fff;
+    margin-bottom: 16px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-author {
+    flex-grow: 1;
+}
+
+.author-name {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.post-time {
+    color: #777;
+}
+
+.post-content {
+    margin-top: 10px;
+}
+
+.action-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #555;
+}
+
+.like-btn {
+    color: #5a5d60;
+}
+
+.comment-btn {
+    color: #5a5d60;
+}
+
+.share-btn {
+    color: #5a5d60;
+}
+
+#friendSuggestions {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: 20px; /* Add some spacing between friend suggestions and feed */
+    padding: 15px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#suggestedFriends {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#suggestedFriends a {
+    text-decoration: none;
+    color: #333;
+}
+
+#suggestedFriends a li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#suggestedFriends a li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
