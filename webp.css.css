@@ -231,36 +231,3 @@ header {
 .share-btn {
     color: #5a5d60;
 }
-
-#friendSuggestions {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-left: 20px; /* Add some spacing between friend suggestions and feed */
-    padding: 15px;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-#suggestedFriends {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 10px;
-}
-
-#suggestedFriends a {
-    text-decoration: none;
-    color: #333;
-}
-
-#suggestedFriends a li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#suggestedFriends a li img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-}
