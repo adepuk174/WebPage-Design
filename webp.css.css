@@ -26,7 +26,9 @@ header {
 
 #titleText {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 20px;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    color: #504e4e;
 }
 
 #titleImage {
@@ -57,14 +59,15 @@ header {
 
 #userText {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #userImage {
     height: 35px;
     width: 35px;
     background-color: yellow;
-    border-radius: 0.3rem;
+    border-radius: 50%;
 }
 
 #mainContent {
@@ -129,21 +132,46 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: gray
 }
 
 #friendList a li img {
-    height: 40px;
-    width: 40px;
-    background-color: aqua;
-    border-radius: 2rem;
-    border: 1px solid blue;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
 }
 
-.status-area {
+
+#fr-name{
+    font-size: 15px;
+}
+
+.feed-area {
     margin: 10px;
     padding: 10px;
+ 
+}
+
+#feed-area img{
+    border-radius: 50%;
+}
+
+.status{
+    display:inline-block;
+}
+
+#status-input{
+    height: 20px;
+    width: 300px;
+    border-radius: 0.3rem;
+    border: 1px grey solid;
+    margin-bottom: 5px;
+    padding-left: 15px;
+    border: none;
+    resize: none;
+    
 }
 
 .status-options {
@@ -168,11 +196,11 @@ header {
     border-radius: 5px;
     cursor: pointer;
 }
+
 .feed {
     max-width: 500px;
     margin-left: -10px;
     padding: 10px;
-    
 }
 
 .post {
@@ -207,8 +235,15 @@ header {
     color: #777;
 }
 
-.post-content {
-    margin-top: 10px;
+#post-content {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#post-img{
+    border-radius: 6%;
+    height:250px;
+    width:400px;
 }
 
 .action-btn {
@@ -221,13 +256,214 @@ header {
 }
 
 .like-btn {
+    margin-left: 40px;
     color: #5a5d60;
+    margin-right: 100px;
 }
 
 .comment-btn {
     color: #5a5d60;
+    margin-right: 100px;
+}
+
+.cmt img {
+    margin-top: 17px;
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#cmt {
+    height: 20px;
+    width: 300px;
+    border-radius: 0.3rem;
+    border: 1px grey solid;
+    padding-left: 0.5rem;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.post-cmt{
+    margin-left: 15px;
+    background:transparent;
+    color: #438ad1;
+    border: none;
 }
 
 .share-btn {
     color: #5a5d60;
+}
+
+#updates {
+    float: right;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#updates h4{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #45484b;
+    margin-bottom: 6px;
+}
+
+.see-all{
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: #438ad1;
+}
+
+
+#suggestedFriends {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#suggestedFriends a {
+    text-decoration: none;
+    color: #333;
+}
+
+#suggestedFriends a li {
+    align-self: start;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#suggestedFriends a li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+}
+
+#suggestedFriends a li h6{
+    color:#6c6b6b;
+    margin-bottom: 10px;
+
+}
+
+#friend-name{
+    font-family: sans-serif;
+    font-size: small;
+    color: #45484b
+}
+
+.ignore-button {
+    margin-top: 10px;
+    border: none;
+    background-color: #dfe6ed;
+    color: rgb(54, 50, 50);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.follow-button {
+    margin-top: 10px;
+    border: none;
+    background-color: #438ad1;
+    color: rgb(242, 236, 236);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#abtevent {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#abtevent a {
+    text-decoration: none;
+    color: #333;
+}
+
+#abtevent a li {
+    align-self: start;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#abtevent a li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#abtevent a li h6{
+    color:#6c6b6b;
+
+}
+
+
+#abtevent p{
+    margin: 2px;
+    padding: 11px;
+    font-size: x-small;
+}
+
+#event-name{
+    font-size: small;
+    color: #45484b
+}
+
+#Birthdays {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#Birthdays a {
+    text-decoration: none;
+    color: #333;
+}
+
+#Birthdays a li {
+    align-self: start;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#persons-name{
+    font-size: small;
+    color: #45484b;
+}
+
+#Birthdays a li img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+#Birthdays a li h6{
+    color:#6c6b6b;
+}
+
+#Birthdays a li div input{
+    margin-top: 6px;
+    padding: 2px;
+    border: none;
+}
+
+#Birthdays a li div button{
+    margin-left: 10px;
+    color: #438ad1;
+    border: none;
+    background: transparent;
 }
