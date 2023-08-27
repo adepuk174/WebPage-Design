@@ -7,7 +7,7 @@
     <!-- Remember to add a title here -->
     <title>Web Page Design</title>
     <!-- linking css sheet -->
-    <link rel="stylesheet" href="C:\Users\adepu\Downloads\webp.css">
+    <link rel="stylesheet" href="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\webp.css">
     <!-- linking awesome font script for icons -->
     <script src="https://kit.fontawesome.com/d1bf1bacdb.js" crossorigin="anonymous"></script>
 </head>
@@ -16,7 +16,7 @@
     <div id="wrapper">
         <header>
             <div id="title" class="headerItem">
-                <img src="C:\Users\adepu\Downloads\chat.png" alt="msg" id="titleImage">
+                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\chat.png" alt="msg" id="titleImage">
                 <span id="titleText">Meetmax</span>
             </div>
             <div id="headerMid" class="headerItem">
@@ -24,7 +24,7 @@
             </div>
             <div id="userSection" class="headerItem">
                 <span id="userText">Little Cheese</span>
-                <img src="C:\Users\adepu\Downloads\cheesyblanket.png" alt="userPic" id="userImage">
+                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheesyblanket.png" alt="userPic" id="userImage">
             </div>
         </header>
         <!-- This div contains both Nav Bars and middle content -->
@@ -57,51 +57,147 @@
                     </a>
                 </ul>
             </nav>
-            <div class="status-area">
-                <img src="C:\Users\adepu\Downloads\cheesyblanket.png" alt="userPic" id="userImage">
-                <textarea class="status-input" rows="5" cols="50" placeholder="What's on your mind?" ></textarea>
+            
+            <div class="feed-area">
+                <div class="status">
+                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheesyblanket.png" alt="userPic" id="userImage">
+                <textarea id="status-input" cols="50" placeholder="What's on your mind?" ></textarea>
                 <div class="status-options">
                     <button class="status-option live-video"><i class="fa-solid fa-video"></i> Live Video</button>
                     <button class="status-option photos-videos"><i class="fa-solid fa-image"></i> Photos/Videos</button>
                     <button class="status-option feeling"><i class="fa-regular fa-face-smile"></i> Feeling</button>
                     <button class="post-button">Post</button>
+                </div>
             </div>
+
+                <div id=updates>
+                    <h4>You Might Like <button class="see-all">See All</button></h4>
+                    <hr color="ededed">
+                    <ul id="suggestedFriends">
+                        <a href="#">
+                             <li>
+                                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\profile-picture.jpg"" alt="Profile Picture">
+                                <div class="friend-info">
+                                    <b><span id="friend-name">Radovan SkillArena</span></b>
+                                    <h6>Founder & CEO at Trophy</h6>
+                                    <i class="fa-solid fa-earth-americas"></i> <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-instagram"></i>
+                                    <div class="friend-buttons">
+                                        <button class="ignore-button">Ignore</button> <button class="follow-button">Accept</button>
+                                    </div>
+                                </div>
+                            </li>
+                         </a>
+                    </ul>
+
+                    <br> <br>
+                    <h4>Recent Event <button class="see-all"></button></h4>
+                    <hr color="#ededed">
+                    <ul id="abtevent">
+                        <a href="#">
+                            <li>
+                                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cap-removebg-preview.png">
+                                <div class="event1">
+                                    <b><span id="event-name">Graduation Ceremony</span></b>
+                                    <h6>The graduation ceremony is also sometimes called...</h6>
+                                </div>
+                            </li>
+                            <hr color="#ededed">
+                            <p>8 seen</p>
+                            <br>
+                            <li>
+                                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\camera.png">
+                                <div class="event2">
+                                    <b><span id="event-name">Photography Ideas</span></b>
+                                    <h6>Reflection. Reflections work because they can create...</h6>
+                                </div>
+                            </li>
+                            <hr color="#ededed">
+                            <p>11 seen</p>
+                            <br>
+                        </a>
+                    </ul>
+
+
+                    <br>
+                    <h4>Birthdays <button class="see-all">See All</button></h4>
+                    <hr color="ededed">
+                    <ul id="Birthdays">
+                        <a href="#">
+                            <li>
+                                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="Profile Picture">
+                                <div class="bd-today">
+                                    <b><span id="persons-name">Aaron Chakuria</span></b>
+                                    <h6>Birthday today</h6>
+                                        <div class="wish">
+                                            <input type="text" placeholder="Write on his inbox">
+                                            <button class="send"><i class="fa-solid fa-arrow-right"></i></button>
+                                        </div>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cake-removebg-preview.png" alt="Profile Picture">
+                                <div class="more-bds">
+                                    <b><span id="persons-name">Upcoming Birthdays</span></b>
+                                    <h6>See 12 others have upcoming birthdays</h6>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+                
             <div class="feed">
                 <!-- Sample post -->
                 <div class="post">
                     <div class="post-header">
-                        <img src="C:\Users\adepu\Downloads\cheese.png" alt="Profile Picture">
+                        <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="Profile Picture">
                         <div class="post-author">
                             <span class="author-name">John Doe</span>
                             <span class="post-time">2 hours ago</span>
                         </div>
                     </div>
-                    <p class="post-content">
-                      <center><img src="https://c.wallhere.com/photos/d9/63/digital_art_artwork_city_landscape-1461613.jpg!d" alt="post" height="250px"></center>
+                    <p id="post-content">
+                      <center><img src="https://c.wallhere.com/photos/d9/63/digital_art_artwork_city_landscape-1461613.jpg!d" id="post-img" alt="post"></center>
                     </p>
+                    <br>
+                    <hr color="ededed">
                     <div class="post-actions">
                         <button class="action-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> Like</button>
                         <button class="action-btn comment-btn"><i class="fa-regular fa-comment"></i> Comment</button>
                         <button class="action-btn share-btn"><i class="fa-solid fa-share"></i> Share</button>
                     </div>
+                    <hr color="ededed">
+                    <div class="cmt">
+                        <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="Profile Picture">
+                        <input type="text" id="cmt" placeholder="Write a comment...       "><i class="fa-regular fa-images"> <i class="fa-regular fa-face-smile"></i></i></input> <button class="post-cmt"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
                 </div>
                 <div class="post">
                     <div class="post-header">
-                        <img src="C:\Users\adepu\Downloads\cheese.png" alt="Profile Picture">
+                        <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="Profile Picture">
                         <div class="post-author">
                             <span class="author-name">Jane Doe</span>
                             <span class="post-time">2 hours ago</span>
                         </div>
                     </div>
-                    <p class="post-content">
-                        <center><img src="https://img.goodfon.com/wallpaper/nbig/4/2c/ulitsa-vecher-luzhi-by-arsenixc.jpg" alt="post" height="250px"></center>
-                    </p>
+                    <div class="post-content">
+                        <center><img src="https://img.goodfon.com/wallpaper/nbig/4/2c/ulitsa-vecher-luzhi-by-arsenixc.jpg" id="post-img" alt="post" ></center>
+                    </div>
+                    <hr color="ededed">
                     <div class="post-actions">
                         <button class="action-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> Like</button>
                         <button class="action-btn comment-btn"><i class="fa-regular fa-comment"></i> Comment</button>
                         <button class="action-btn share-btn"><i class="fa-solid fa-share"></i> Share</button>
                     </div>
+                    <hr color="ededed">
+                    <div class="cmt">
+                    <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="Profile Picture">
+                    <input type="text" id="cmt" placeholder="Write a comment...       "><i class="fa-regular fa-images"> <i class="fa-regular fa-face-smile"></i></i></input> <button class="post-cmt"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
                 </div>
+                
+                <!-- Add more posts here -->
+                
             </div>
             
             </div>
@@ -111,56 +207,25 @@
                 <ul id="friendList">
                     <a href="#">
                         <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
+                            <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="cheeseFriend" id="fr-img">
+                            <span id="fr-name">Cheese</span>
                         </li>
                     </a>
                     <a href="#">
                         <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
+                            <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="cheeseFriend" id="fr-img">
+                            <span id="fr-name">Cheese</span>
                         </li>
                     </a>
                     <a href="#">
                         <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
-                        </li>
-                        <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
-                        </li>
-                        <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
-                            <img src="C:\Users\adepu\Downloads\cheese.png" alt="cheeseFriend">
-                            Cheese
+                            <img src="C:\Users\raffe\OneDrive\Desktop\Internship\Meetmax Collab\Pictures\cheese.png" alt="cheeseFriend" id="fr-name">
+                            <span id="fr-name">Cheese</span>
                         </li>
                     </a>
                 </ul>
             </nav>
         </div>
 </body>
+
 </html>
