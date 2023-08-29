@@ -5,7 +5,7 @@
 }
 
 #wrapper {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -32,8 +32,8 @@ header {
 }
 
 #titleImage {
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 }
 
 #headerMid {
@@ -47,6 +47,7 @@ header {
     border-radius: 0.3rem;
     border: 1px grey solid;
     padding-left: 0.5rem;
+    margin-left: 17px;
 }
 
 #userSection {
@@ -101,10 +102,14 @@ header {
 }
 
 #friendSection {
+    margin: 15px;
+    width: 260px;
     display: flex;
     flex-direction: column;
-    padding: 0 0.2rem;
+    padding: 0 0.5rem;
     gap: 1rem;
+    padding left: +20px;
+    /* margin-left:auto; */
 }
 
 #friendSearch {
@@ -112,7 +117,7 @@ header {
     height: 2rem;
     border-radius: 0.3rem;
     border: 1px grey solid;
-    padding-left: 0.5rem;
+    padding-left: 2.0rem;
 }
 
 #friendList {
@@ -120,7 +125,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
-    padding-left: 0.5rem;
+    padding-left: 2.0rem;
 }
 
 #friendList a {
@@ -133,12 +138,12 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 1.0rem;
-    color: gray
+    color: gray;
 }
 
 #friendList a li img {
-    height: 35px;
-    width: 35px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     border: 1px solid #ddd;
 }
@@ -148,35 +153,47 @@ header {
     font-size: 15px;
 }
 
-.feed-area {
-    margin: 10px;
-    padding: 10px;
- 
+.feed-event {
+    width: 930px;
+    padding: 30px;
+    margin-left: 250px;
+    display: flex;
+    justify-content: space-between 30px;
+    background-color: rgba(136, 136, 136, 0.103);
+    border-radius: 20px;
 }
+
 
 #feed-area img{
     border-radius: 50%;
 }
 
 .status{
+    width: 500px;
     display:inline-block;
+    background-color: white;
+    padding: 17px;
+    border-radius: 10px;
+    margin-left: +9px;
 }
 
 #status-input{
-    height: 20px;
-    width: 300px;
+    height: 35px;
+    width: 347px;
+    background-color: rgba(136, 136, 136, 0.103);
     border-radius: 0.3rem;
-    border: 1px grey solid;
-    margin-bottom: 5px;
     padding-left: 15px;
+    padding-top: 10px;
     border: none;
     resize: none;
+    width: 90%;
     
 }
 
 .status-options {
+    margin-top: 15px;
     display: flex;
-    gap: 5px;
+    gap: 7px;
 }
 
 .status-option {
@@ -188,9 +205,9 @@ header {
 }
 
 .post-button {
-    margin-left: 20px;
+    margin-left: +85px;
     border: none;
-    background-color: #5a5d60;
+    background-color: rgb(80, 123, 241);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -199,14 +216,17 @@ header {
 
 .feed {
     max-width: 500px;
-    margin-left: -10px;
+    margin-left: 0px;
     padding: 10px;
 }
 
 .post {
+    padding: 17px;
     background-color: #fff;
     margin-bottom: 16px;
+    border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    width: 500px;
 }
 
 .post-header {
@@ -224,6 +244,12 @@ header {
 
 .post-author {
     flex-grow: 1;
+}
+
+.post-actions{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display:flex ;
 }
 
 .author-name {
@@ -275,13 +301,14 @@ header {
 }
 
 #cmt {
-    height: 20px;
+    height: 30px;
     width: 300px;
     border-radius: 0.3rem;
-    border: 1px grey solid;
+    /* border: 1px grey solid; */
     padding-left: 0.5rem;
     margin-bottom: 10px;
     border: none;
+    background-color: rgba(136, 136, 136, 0.103);
 }
 
 .post-cmt{
@@ -295,175 +322,9 @@ header {
     color: #5a5d60;
 }
 
-#updates {
-    float: right;
-    background-color: #fff;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+#img-emo {
+    padding: 5px 5px;
+    border-radius: 10px;
+    border-color: rgba(182, 182, 182, 0.3);
 }
 
-#updates h4{
-    font-family: sans-serif;
-    font-size: 13px;
-    color: #45484b;
-    margin-bottom: 6px;
-}
-
-.see-all{
-    float: right;
-    background-color: transparent;
-    border: none;
-    color: #438ad1;
-}
-
-
-#suggestedFriends {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-#suggestedFriends a {
-    text-decoration: none;
-    color: #333;
-}
-
-#suggestedFriends a li {
-    align-self: start;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#suggestedFriends a li img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    margin-bottom: 50px;
-}
-
-#suggestedFriends a li h6{
-    color:#6c6b6b;
-    margin-bottom: 10px;
-
-}
-
-#friend-name{
-    font-family: sans-serif;
-    font-size: small;
-    color: #45484b
-}
-
-.ignore-button {
-    margin-top: 10px;
-    border: none;
-    background-color: #dfe6ed;
-    color: rgb(54, 50, 50);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.follow-button {
-    margin-top: 10px;
-    border: none;
-    background-color: #438ad1;
-    color: rgb(242, 236, 236);
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#abtevent {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-#abtevent a {
-    text-decoration: none;
-    color: #333;
-}
-
-#abtevent a li {
-    align-self: start;
-    width: 280px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#abtevent a li img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-#abtevent a li h6{
-    color:#6c6b6b;
-
-}
-
-
-#abtevent p{
-    margin: 2px;
-    padding: 11px;
-    font-size: x-small;
-}
-
-#event-name{
-    font-size: small;
-    color: #45484b
-}
-
-#Birthdays {
-    list-style-type: none;
-    margin-top: 10px;
-}
-
-#Birthdays a {
-    text-decoration: none;
-    color: #333;
-}
-
-#Birthdays a li {
-    align-self: start;
-    width: 280px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#persons-name{
-    font-size: small;
-    color: #45484b;
-}
-
-#Birthdays a li img {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-}
-
-#Birthdays a li h6{
-    color:#6c6b6b;
-}
-
-#Birthdays a li div input{
-    margin-top: 6px;
-    padding: 2px;
-    border: none;
-}
-
-#Birthdays a li div button{
-    margin-left: 10px;
-    color: #438ad1;
-    border: none;
-    background: transparent;
-}
