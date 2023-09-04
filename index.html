@@ -33,57 +33,94 @@
             <nav id="menu">
                 <ul id="menuList">
                     <a href="#">
-                        <li> <i class="fa-solid fa-border-all"></i> Feed</li>
+                        <li> <i class="fa-solid fa-border-all "></i> Feed</li>
                     </a>
                     <a href="#">
-                        <li> <i class="fa-solid fa-user-group"></i> My Community</li>
+                        <li> <i class="fa-solid fa-user-group spacing"></i> My Community</li>
                     </a>
                     <a href="#">
-                        <li><i class="fa-solid fa-message"></i> Messages</li>
+                        <li><i class="fa-solid fa-message spacing"></i> Messages</li>
                     </a>
                     <a href="#">
-                        <li><i class="fa-solid fa-bell"></i> Notification</li>
+                        <li><i class="fa-solid fa-bell spacing"></i> Notification</li>
                     </a>
                     <a href="#">
-                        <li><i class="fa-solid fa-globe"></i> Explore</li>
+                        <li><i class="fa-solid fa-globe spacing"></i> Explore</li>
                     </a>
                     <a href="#">
-                        <li><i class="fa-solid fa-user"></i> Profile</li>
+                        <li><i class="fa-solid fa-user spacing"></i> Profile</li>
                     </a>
                     <a href="#">
-                        <li><i class="fa-solid fa-gear"></i> Settings</li>
+                        <li><i class="fa-solid fa-gear spacing"></i> Settings</li>
                     </a>
                     <a href="#">
-                        <li><i class="fa-solid fa-right-from-bracket"></i> Logout</li>
+                        <li><i class="fa-solid fa-right-from-bracket spacing"></i> Logout</li>
                     </a>
                 </ul>
             </nav>
+
+
             <div class="feed-event">
-            <div class="feed-area">
-                <div class="status">
-                <img src="cheesyblanket.png" alt="userPic" id="userImage">
-                <textarea id="status-input" cols="50" placeholder="What's on your mind?" ></textarea>
-                <div class="status-options">
-                    <button class="status-option live-video"><i class="fa-solid fa-video"></i> Live Video</button>
-                    <button class="status-option photos-videos"><i class="fa-solid fa-image"></i> Photos/Videos</button>
-                    <button class="status-option feeling"><i class="fa-regular fa-face-smile"></i> Feeling</button>
-                    <button class="post-button">Post</button>
-                </div>
-            </div>
-            
-            <div class="feed">
-                <!-- Sample post -->
-                <div class="post">
+
+              <div class="feed-area">
+                  <div class="status">
+                  <img src="cheesyblanket.png" alt="userPic" id="userImage">
+                  <textarea id="status-input" cols="50" placeholder="What's on your mind?" ></textarea>
+                  <div class="status-options">
+                      <button class="status-option live-video"><i class="fa-solid fa-video"></i> Live Video</button>
+                      <button class="status-option photos-videos"><i class="fa-solid fa-image"></i> Photos/Videos</button>
+                      <button class="status-option feeling"><i class="fa-regular fa-face-smile"></i> Feeling</button>
+                      <button class="post-button">Post</button>
+                  </div>
+              </div>
+              
+              <div class="feed">
+                  <!-- Sample post -->
+                  <div class="post">
+                      <div class="post-header">
+                          <img src="cheese.png" alt="Profile Picture">
+                          <div class="post-author">
+                            <div class="name-time">
+                              <span class="author-name">John Doe</span>
+                              <span class="post-time">2d.  Public</span>
+                            </div> 
+                              <div class="post-menu"><img src="menu-icon.png" alt="manu"></div>
+                          </div>
+                      </div>
+                        <center><img src="https://c.wallhere.com/photos/d9/63/digital_art_artwork_city_landscape-1461613.jpg!d" id="post-img" alt="post"></center>
+                      <br>
+                      <hr color="ededed">
+                      <div class="post-actions">
+                          <button class="action-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> Like</button>
+                          <button class="action-btn comment-btn"><i class="fa-regular fa-comment"></i> Comment</button>
+                          <button class="action-btn share-btn"><i class="fa-solid fa-share"></i> Share</button>
+                      </div>
+                      <hr color="ededed">
+                      <div class="cmt">
+                        <div>
+                          <img id="cmt-img" src="cheese.png" alt="Profile Picture">
+                        </div>
+                        <div class="cmt-mid">
+                          <input type="text" id="cmt" placeholder="Write a comment...       ">
+                          <button id="img-emo"><i class="fa-regular fa-images"> <i class="fa-regular fa-face-smile"></button></i></i></input> 
+                        </div>  
+                          <div class="cmt-right">
+                          <button class="post-cmt"><img id="post-cmt" src="send-icon.png" alt="send"></button>
+                          </div>
+                          </div>
+                  </div>
+                  <div class="post">
                     <div class="post-header">
                         <img src="cheese.png" alt="Profile Picture">
                         <div class="post-author">
+                          <div class="name-time">
                             <span class="author-name">John Doe</span>
-                            <span class="post-time">2 hours ago</span>
+                            <span class="post-time">2d.  Public</span>
+                          </div> 
+                            <div class="post-menu"><img src="menu-icon.png" alt="manu"></div>
                         </div>
                     </div>
-                    <p id="post-content">
-                      <center><img src="https://c.wallhere.com/photos/d9/63/digital_art_artwork_city_landscape-1461613.jpg!d" id="post-img" alt="post"></center>
-                    </p>
+                      <center><img src="https://img.goodfon.com/wallpaper/nbig/4/2c/ulitsa-vecher-luzhi-by-arsenixc.jpg" id="post-img" alt="post"></center>
                     <br>
                     <hr color="ededed">
                     <div class="post-actions">
@@ -93,173 +130,158 @@
                     </div>
                     <hr color="ededed">
                     <div class="cmt">
-                        <img src="cheese.png" alt="Profile Picture">
-                        <input type="text" id="cmt" placeholder="Write a comment...       "><button id="img-emo"><i class="fa-regular fa-images"> <i class="fa-regular fa-face-smile"></button></i></i></input> <button class="post-cmt"><i class="fa-solid fa-arrow-right"></i></button>
+                      <div>
+                        <img id="cmt-img" src="cheese.png" alt="Profile Picture">
+                      </div>
+                      <div class="cmt-mid">
+                        <input type="text" id="cmt" placeholder="Write a comment...       ">
+                        <button id="img-emo"><i class="fa-regular fa-images"> <i class="fa-regular fa-face-smile"></button></i></i></input> 
+                      </div>  
+                        <div class="cmt-right">
+                        <button class="post-cmt"><img id="post-cmt" src="send-icon.png" alt="send"></button>
+                        </div>
                         </div>
                 </div>
-                <div class="post">
-                    <div class="post-header">
-                        <img src="cheese.png" alt="Profile Picture">
-                        <div class="post-author">
-                            <span class="author-name">Jane Doe</span>
-                            <span class="post-time">2 hours ago</span>
-                        </div>
-                    </div>
-                    <div class="post-content">
-                        <center><img src="https://img.goodfon.com/wallpaper/nbig/4/2c/ulitsa-vecher-luzhi-by-arsenixc.jpg" id="post-img" alt="post" ></center>
-                    </div>
-                    <hr color="ededed">
-                    <div class="post-actions">
-                        <button class="action-btn like-btn"><i class="fa-regular fa-thumbs-up"></i> Like</button>
-                        <button class="action-btn comment-btn"><i class="fa-regular fa-comment"></i> Comment</button>
-                        <button class="action-btn share-btn"><i class="fa-solid fa-share"></i> Share</button>
-                    </div>
-                    <hr color="ededed">
-                    <div class="cmt">
-                    <img src="cheese.png" alt="Profile Picture">
-                    <input type="text" id="cmt" placeholder="Write a comment...       "><button id="img-emo"><i class="fa-regular fa-images"> <i class="fa-regular fa-face-smile"></button></i></i></input> <button class="post-cmt"><i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div>
-                
-                <!-- Add more posts here -->
-                
-            </div>
-            
-            </div>
+                  
+                  <!-- Add more posts here -->
+                  
+              </div>
+              
+              </div>
 
-            <div class="events">
-                <div class="box box-1">
-    
-                    <div class="heading">
-                      You Might Like
-                      <a id="seeall" href="#"> See All</a>
-                    </div>
-                    <span>
-                      <hr>
-                    </span>
-                    <div class="info">
-                      <div>
-                         <img  src="profile-picture.jpg" id="output" width="200" />
+              <div class="events">
+                  <div class="box box-1">
+      
+                      <div class="heading">
+                        You Might Like
+                        <a id="seeall" href="#"> See All</a>
                       </div>
-                
-                      <div class="desc">
-                        <div class="name">
-                          John Doe
-                        </div>
-                
-                        <div class="role">
-                          CEO of RandomCompany
-                        </div>     
-                      </div>      
-                    </div>
-                    
-                    <div class="socials">
-                      <a href="https://www.linkedin.com/"><img id="icon" src="linkedin-icon.png" alt="LinkedIn"></a>
-                      <a href="https://www.facebook.com/"><img id="icon" src="facebook-icon.png" alt="Facebook"></a>
-                      <a href="https://www.twitter.com/"><img id="icon" src="twitter-icon.png" alt="Twitter"></a>
-                      <a href="https://www.instagram.com/"><img id="icon" src="instagram-icon.png" alt="Instagram"></a>
-                    </div>
-                
-                    <div class="buttons">
-                      <button class="ignore">Ignore</button>
-                      <button class="follow">Follow</button>
-                    </div>
-                  </div>
-                
-                  <div class="box box-2">
-                    <div class="heading">
-                        Recent Events
-                        <a id="dots" href="#"><img src="menu-icon.png" alt="menu" id="menu"></a>
-                    </div>
-                    <hr>
-                      <div class="birthdays">
-                        <div class="flex">
-                          <div>
-                            <img  src="diploma-icon.png" id="output-1" width="200" />
-                          </div>
-                    
-                          <div class="up-bdays">
-                            <div class="name">
-                              Graduation Ceremony
-                            </div>
-                    
-                            <div class="role">
-                              The graduation ceremony is also sometimes called....
-                            </div>     
-                          </div> 
-                        </div>
-                        <hr>   
-                        <p>8 seen</p>
-                      </div>
-                
-                      <div class="birthdays">
-                        <div class="flex">
-                          <div class="profile-pic">
-                            <img  src="camera-icon.png" id="output-1" width="200" />
-                          </div>
-                    
-                          <div class="up-bdays">
-                            <div class="name">
-                              Photography Ideas
-                            </div>
-                    
-                            <div class="role">
-                              Reflections, Reflections work because they can create....
-                            </div>     
-                          </div> 
-                        </div>
-                        <hr>   
-                        <p>11 seen</p>
-                      </div>
-                   </div>
-                
-                   <div class="box box-3">
-                    <div class="heading">
-                      Birthdays
-                      <a id="seeall-box3" href="#"> See All</a>        
-                    </div>
-                    <hr>
-                    <div class="send-msg">
-                    <div class="info-box3">
-                      <div class="profile-pic">
-                         <img  src="profile-picture.jpg" id="output-1" width="200" />
-                      </div>
-                
-                      <div>
-                        <div class="name">
-                          John Doe
-                        </div>
-                
-                        <div class="role">
-                          Birthday
-                        </div>     
-                      </div>      
-                    </div>
-                
-                    <div class="text-snd">
-                        <input type="text" placeholder="Write on his inbox" id="input-1">
-                        <button class="send"><img src="send-icon.png" alt="send"></button>
-                    </div>
-                </div>
-                      <div class="birthdays flex">
-                        <div class="profile-pic">
-                           <img  src="icons8-birthday-80.png" id="output-1" width="200" />
+                      <span>
+                        <hr>
+                      </span>
+                      <div class="info">
+                        <div>
+                          <img  src="profile-picture.jpg" id="output" width="200" />
                         </div>
                   
-                        <div class="up-bdays">
+                        <div class="desc">
                           <div class="name">
-                            Upcoming Birthdays
+                            John Doe
                           </div>
                   
                           <div class="role">
-                            See 12 others have upcoming birthdays
+                            CEO of RandomCompany
                           </div>     
                         </div>      
                       </div>
-                    
-                
+                      
+                      <div class="socials">
+                        <a href="https://www.linkedin.com/"><img id="icon" src="linkedin-icon.png" alt="LinkedIn"></a>
+                        <a href="https://www.facebook.com/"><img id="icon" src="facebook-icon.png" alt="Facebook"></a>
+                        <a href="https://www.twitter.com/"><img id="icon" src="twitter-icon.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/"><img id="icon" src="instagram-icon.png" alt="Instagram"></a>
+                      </div>
+                  
+                      <div class="buttons">
+                        <button class="ignore">Ignore</button>
+                        <button class="follow">Follow</button>
+                      </div>
+                    </div>
+                  
+                    <div class="box box-2">
+                      <div class="heading">
+                          Recent Events
+                          <a id="dots" href="#"><img src="menu-icon.png" alt="menu" id="menu"></a>
+                      </div>
+                      <hr>
+                        <div class="birthdays">
+                          <div class="flex">
+                            <div>
+                              <img  src="diploma-icon.png" id="output-1" width="200" />
+                            </div>
+                      
+                            <div class="up-bdays">
+                              <div class="name">
+                                Graduation Ceremony
+                              </div>
+                      
+                              <div class="role">
+                                The graduation ceremony is also sometimes called....
+                              </div>     
+                            </div> 
+                          </div>
+                          <hr>   
+                          <p>8 seen</p>
+                        </div>
+                  
+                        <div class="birthdays">
+                          <div class="flex">
+                            <div class="profile-pic">
+                              <img  src="camera-icon.png" id="output-1" width="200" />
+                            </div>
+                      
+                            <div class="up-bdays">
+                              <div class="name">
+                                Photography Ideas
+                              </div>
+                      
+                              <div class="role">
+                                Reflections, Reflections work because they can create....
+                              </div>     
+                            </div> 
+                          </div>
+                          <hr>   
+                          <p>11 seen</p>
+                        </div>
+                    </div>
+                  
+                    <div class="box box-3">
+                      <div class="heading">
+                        Birthdays
+                        <a id="seeall-box3" href="#"> See All</a>        
+                      </div>
+                      <hr>
+                      <div class="send-msg">
+                      <div class="info-box3">
+                        <div class="profile-pic">
+                          <img  src="profile-picture.jpg" id="output-1" width="200" />
+                        </div>
+                  
+                        <div>
+                          <div class="name">
+                            John Doe
+                          </div>
+                  
+                          <div class="role">
+                            Birthday
+                          </div>     
+                        </div>      
+                      </div>
+                  
+                      <div class="text-snd">
+                          <input type="text" placeholder="Write on his inbox" id="input-1">
+                          <button class="send"><img src="send-icon.png" alt="send"></button>
+                      </div>
                   </div>
-                </div> 
+                        <div class="birthdays flex">
+                          <div class="profile-pic">
+                            <img  src="icons8-birthday-80.png" id="output-1" width="200" />
+                          </div>
+                    
+                          <div class="up-bdays">
+                            <div class="name">
+                              Upcoming Birthdays
+                            </div>
+                    
+                            <div class="role">
+                              See 12 others have upcoming birthdays
+                            </div>     
+                          </div>      
+                        </div>
+                      
+                  
+                    </div>
+                  </div> 
                 </div>
 
 
@@ -344,4 +366,3 @@
         </div>
 </body>
 </html>
-
